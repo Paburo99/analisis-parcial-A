@@ -29,7 +29,7 @@ Si dos son del mismo orden, indícalo.
 
 ### Respuesta
 
-n/log2(n) < log2(n) < nlog2(n) < sqrt(n) = n^(1.5) < 
+n/log2(n) < log2(n) < nlog2(n) < sqrt(n) = n^(1.5) < (log2(n)^2) < n < n^2 < 2^n < n!
 
 ---
 
