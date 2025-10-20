@@ -29,8 +29,7 @@ Si dos son del mismo orden, indícalo.
 
 ### Respuesta
 
-n/log2(n) < log2(n) < nlog2(n) < sqrt(n) = n^(1.5) < (log2(n)^2) < n < n^2 < 2^n < n!
-
+log(n) < (log(n))^2 < sqrt(n) < n < n/log(n) n^(1.5) < n^2 < 2^n < n!
 ---
 
 ### Punto 2 (25 pts) — Identifica y confronta
@@ -59,7 +58,18 @@ Algoritmos posibles:
 
 ### Conclusión a la comparación entre T(1) y T(2)
 
-El umbral se encuentra en n = 4, a partir de valores mayores T(2) = 8nlog2(n) + 200 presenta un tiempo de ejecución inferior a T(1) = 3n^2 + 50n
+- Para n=4: T1(4) = 248, T2(4) ≈ 264 → T1 < T2
+- Para n=5: T1(5) = 325, T2(5) ≈ 293 → T2 < T1
+
+El umbral se encuentra en n = 5, a partir de este valor T(2) = 8nlog2(n) + 200 presenta un tiempo de ejecución inferior a T(1) = 3n^2 + 50n
+
+### Conclusión a la comparación entre T(1) y T(3)
+
+- Para n=24: T1(24) = 2928.00, T3(24) = 2764.80 → T3 < T1 
+- Para n=25: T1(25) = 3125.00, T3(25) = 3125.00 → T1 = T3 
+- Para n=26: T1(26) = 3328.00, T3(26) = 3515.20 → T1 < T3 
+
+Por lo tanto, el umbral se encuentra en n = 26
 
 ---
 
