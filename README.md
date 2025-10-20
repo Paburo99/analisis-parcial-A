@@ -80,7 +80,7 @@ Isaac, convencido de que tiene un talento especial para los números, asegura qu
 
 
 ### Respuesta
-Dado un rango (a, b) el algoritmo debe realizar un bucle (O(n)), por cada valor dentro del rango debe realizar un bucle interno de 2 hasta el valor anterior (i - 1). Por lo que en el peor de los casos el algoritmo presenta un tiempo de ejecución O(n^2), ignorando el tiempo de ejecución constante dado en las demás líneas de código.
+Dado un rango (a, b), para cada valor i dentro del rango (a, b) el algoritmo debe realizar un bucle de complejidad O(√i / 2) ≈ O(√i), que en el peor caso es O(√b). Si consideramos b - a = n obtenemos que la complejidad temporal del problema es O((b-a)*√b) = O(n*√b) 
 
 ---
 
